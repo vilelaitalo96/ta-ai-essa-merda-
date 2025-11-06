@@ -1,45 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "montserrat",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family:monospace ;
+  scroll-behavior: smooth;
 }
 
-;:root{
-    font-size: 65.5%;
-
-}
-body{
-    font-size: 1.6rem;
+:root {
+  font-size: 62.5%;
 }
 
-header{
-    background: oklch(32.465% 0.1731 284.866);
-        color: aqua;
-        padding-block: 2rem;
-    }
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
 
-.header-conteiner{
-    max-width: 128rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+header {
+  background-color: #ff0000;
+  color: #ff00d9;
+  padding-block: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0.4rem 1rem rgba(0, 255, 4, 0.1);
+}
 
-    ul{
-        display: flex;
-        gap: 5rem;
-        list-style: none;
-    }
+.header-conteiner {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
 
-    a{
-        color: aqua;
-        text-decoration: none;
-    }
-    a:hover{
-        transform: scale(1.1);
-        font-weight: bold;
-        transition: ease-in-out .4s;
-    }
+.header-conteiner ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.header-conteiner a {
+  color: #00ff26;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-conteiner a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  color: #2bff00;
+  transition: ease-in-out 0.4s;
+}
+
+main {
+  background: #00ffb7;
+  min-height: calc(100svh - 11rem);
+  padding-block: 15.8rem 4rem;
+}
+
+.main-conteiner {
+  max-width: 120rem;
+  margin: 0 auto;
+  line-height: 2.4rem;
+}
+
+.main-conteiner section {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-conteiner section div {
+  width: 6rem;
+  height: 6rem;
+  background: #00bfff5e;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+
+.main-conteiner section .pastel {
+  background: #c3cff1;
+}
+
+.main-conteiner h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff0088;
+}
+
+.main-conteiner p {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #020202;
+}
+
+.main-conteiner #relative .pastel {
+  position: relative;
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+.main-conteiner #absolute {
+  position: relative;
+  z-index: 1;
+}
+
+.main-conteiner #absolute .pastel {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main-conteiner #fixed .pastel {
+  position: fixed;
+  top: 12rem;
+  left: 8rem;
+  opacity: 0.9;
 }

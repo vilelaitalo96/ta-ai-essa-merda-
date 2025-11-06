@@ -9,36 +9,74 @@
     <link rel="stylesheet" href="style.css">
     <title>position no css </title>
 </head>
+
 <body>
-    <header>
-        <div class="header-conteiner">
-               <nav>
-            <ul>
-                <li><a href="">home</a>
-                </li>
-                <li>
-                    <a href="">position static</a>
+  <header>
+    <div class="header-conteiner" id="header">
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#static">Position: static</a></li>
+          <li><a href="#relative">Position: relative</a></li>
+          <li><a href="#absolute">Position: absolute</a></li>
+          <li><a href="#fixed">Position: fixed</a></li>
+        </ul>
+      </nav>
+      <h1>Position no CSS</h1>
+    </div>
+  </header>
 
-                </li>
-                <li>
-                    <a href="">position absolute</a>
-                </li>
-                <li>
-                    <a href="">position fixed</a>
-                </li>
-            </ul>
+  <main>
+    <div class="main-conteiner">
+      <section id="static">
+        <h2>Position: static</h2>
+        <p>O valor <strong>position: static</strong> é o comportamento natural dos elementos HTML. Nesse modo, cada item
+          ocupa o seu lugar conforme o fluxo comum da página, seguindo a ordem de cima para baixo e da esquerda para a
+          direita. Como o elemento não reage a propriedades como <strong>top</strong>, <strong>right</strong>,
+          <strong>bottom</strong> ou <strong>left</strong>, ele permanece fixo na estrutura padrão, sem criar camadas ou
+          interferir em outros elementos. É a base estável do posicionamento no CSS, usada quando não se deseja mover
+          manualmente o conteúdo.</p>
+      </section>
 
-        </nav>
-        <h1>position no css</h1>
-        </div>
-    </header>
-    <main>
-        <section>
-            <h2>position: static</h2>
-            <p>Cristiano Ronaldo dos Santos Aveiro OIH • GOIH • ComM (Funchal, 5 de fevereiro de 1985) é um futebolista português que atua como atacante, mais especificamente como ponta-esquerda ou centroavante, no Al-Nassr e na Seleção Portuguesa, onde é capitão. É o maior goleador da história do futebol em jogos oficiais, sendo simultaneamente o jogador com mais gols na história a nível de seleções bem como a nível de clubes, trajetória que o levou ao recorde de cinco nomeações ao prémio de melhor artilheiro do mundo pela Federação Internacional de História e Estatísticas do Futebol (IFFHS).[14][15][16][17] Durante sua passagem pela Europa, se tornou o maior jogador histórico e recordista da UEFA Champions League, Nations League e Eurocopa.[18][19] Também é o único atleta a vencer nas três ligas europeias de maior prestígio (Premier League, La Liga e Série A) sendo eleito destaque como o melhor jogador e artilheiro das mesmas, quando protagonizava a conquista de seus títulos.[20]</p>
-            <p>Cristiano Ronaldo é frequentemente considerado o melhor e mais completo futebolista,[21] bem como o maior artilheiro do mundo[22] e na opinião da grande maioria dos especialistas do esporte, seus atributos físicos, suas habilidades goleadoras, sua mentalidade vencedora, sua liderança e seu desempenho sob pressão, o tornam um dos melhores e maiores futebolistas de todos os tempos,[23] com alguns ainda o colocando como o melhor jogador de sempre.[24] Futebolista histórico, é considerado o jogador do século pela Globe Soccer Awards por diversos ex-jogadores, técnicos e dirigentes do futebol.[25][26][27][28][29] Escalado no Dream Team da Bola de Ouro, também é o jogador com o maior número de nomeações do prémio Ballon d'Or.[30][31] Foi eleito o melhor jogador do mundo pela FIFA e pela France Football recebendo o prémio Bola de Ouro (que por um período passou a denominar-se Bola de Ouro da FIFA) um total de cinco vezes, sendo o segundo maior vencedor, atrás apenas de Lionel Messi. Também venceu o prémio Bota de Ouro da UEFA num total de quatro vezes. Ganhou uma vez o prémio de Melhor Jogador de Clubes da UEFA. Detém o recorde de três vezes o prémio de Melhor Jogador da UEFA na Europa, três vezes FIFA The Best, seis vezes Globbe Soccer Awards e também o recorde de 15 nomeações na Equipe do Ano da UEFA. Além disso detém quase todos os recordes da Champions League, como a artilharia geral, bem como é amplamente considerado o maior jogador de toda história desta competição.</p>
-            <p>Cristiano Ronaldo é frequentemente considerado o melhor e mais completo futebolista,[21] bem como o maior artilheiro do mundo[22] e na opinião da grande maioria dos especialistas do esporte, seus atributos físicos, suas habilidades goleadoras, sua mentalidade vencedora, sua liderança e seu desempenho sob pressão, o tornam um dos melhores e maiores futebolistas de todos os tempos,[23] com alguns ainda o colocando como o melhor jogador de sempre.[24] Futebolista histórico, é considerado o jogador do século pela Globe Soccer Awards por diversos ex-jogadores, técnicos e dirigentes do futebol.[25][26][27][28][29] Escalado no Dream Team da Bola de Ouro, também é o jogador com o maior número de nomeações do prémio Ballon d'Or.[30][31] Foi eleito o melhor jogador do mundo pela FIFA e pela France Football recebendo o prémio Bola de Ouro (que por um período passou a denominar-se Bola de Ouro da FIFA) um total de cinco vezes, sendo o segundo maior vencedor, atrás apenas de Lionel Messi. Também venceu o prémio Bota de Ouro da UEFA num total de quatro vezes. Ganhou uma vez o prémio de Melhor Jogador de Clubes da UEFA. Detém o recorde de três vezes o prémio de Melhor Jogador da UEFA na Europa, três vezes FIFA The Best, seis vezes Globbe Soccer Awards e também o recorde de 15 nomeações na Equipe do Ano da UEFA. Além disso detém quase todos os recordes da Champions League, como a artilharia geral, bem como é amplamente considerado o maior jogador de toda história desta competição.</p>
-        </section>
-    </main>
+      <section id="relative">
+        <h2>Position: relative</h2>
+        <p>Com o <strong>position: relative</strong>, um elemento pode ser movido levemente em relação ao seu ponto de
+          origem, sem sair do fluxo normal do layout. Isso quer dizer que ele ainda ocupa o mesmo espaço, mas pode ser
+          deslocado usando top, right, bottom ou left. Esse tipo de posicionamento é ideal para ajustes sutis ou para
+          servir como referência a outros elementos com <strong>position: absolute</strong>, criando uma hierarquia
+          controlada e visualmente equilibrada.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+
+      <section id="absolute">
+        <h2>Position: absolute</h2>
+        <p>O <strong>position: absolute</strong> retira o elemento do fluxo da página e o posiciona de acordo com o seu
+          ancestral mais próximo que não seja estático. Se não existir nenhum, ele será alinhado em relação ao documento
+          principal. Isso permite colocar itens sobre outros, criar caixas flutuantes ou composições mais livres no
+          layout. Porém, por não ocupar espaço no fluxo, é importante usá-lo com cuidado para evitar sobreposições
+          indesejadas.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+
+      <section id="fixed">
+        <h2>Position: fixed</h2>
+        <p>O <strong>position: fixed</strong> fixa o elemento em uma posição específica da tela, independentemente da
+          rolagem. Ele se ancora na janela do navegador, e não no restante do conteúdo. Esse comportamento é perfeito
+          para criar menus fixos, botões flutuantes ou cabeçalhos que permanecem visíveis mesmo quando o usuário
+          desliza a página.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+    </div>
+  </main>
 </body>
+
 </html>
